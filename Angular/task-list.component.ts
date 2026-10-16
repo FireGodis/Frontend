@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 interface Task { title: string; done: boolean; }
 
 @Component({
   selector: 'app-task-list',
   standalone: true,
+  imports: [CommonModule, FormsModule],
   template: `
     <h1>Minhas tarefas</h1>
     <ul>
